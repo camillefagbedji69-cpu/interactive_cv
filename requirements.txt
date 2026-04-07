@@ -4,3 +4,4 @@ streamlit_folium
 openpyxl
 folium
 plotly
+streamlit_option_menu
