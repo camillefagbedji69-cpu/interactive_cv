@@ -1,7 +1,6 @@
 import streamlit as st
 from Parcours_app import afficher_parcours
 from Skills_app import afficher_competences
-from Project_app import afficher_projet
 from Experiences_app import afficher_experience
 # 1. Configuration de la page
 st.set_page_config(page_title="Interactive CV - FAGBEDJI G. Camille Boris", layout="wide")
