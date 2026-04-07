@@ -9,7 +9,7 @@ st.header('🌍 My Geospatial Projects')
 
 # Chargement (ajoute un try/except pour éviter les crashs si le fichier manque)
 try:
-    project_df = load_data("Projects.xlsx")
+    project_df = pd.read_excel("Projects.xlsx")
     
     # Initialisation de la carte sur Parakou
     m = folium.Map(location=[9.21, 2.37], zoom_start=8)
