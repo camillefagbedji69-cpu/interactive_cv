@@ -32,8 +32,8 @@ elif selected == "Skills":
   from Skills_app import afficher_competences
   afficher_competences()
 elif selected == "Projects":
-  from Project_app import afficher_projet
-  afficher_projet()
+    from Project_app import afficher_projet
+    afficher_projet()
 else : 
   from Experiences_app import afficher_experience
   afficher_experience()
