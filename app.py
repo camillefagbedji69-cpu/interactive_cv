@@ -29,7 +29,7 @@ def afficher_projet():
         m = folium.Map(location=[9.21, 2.37], zoom_start=8)
         cluster = MarkerCluster().add_to(m)
         for index, p in project_df.iterrows():
-            popup_html = f""""""
+            popup_html = f"""
         <div style="font-family: Arial; width: 200px;">
             <b style="color: #2E86C1;">{p['Project_name']}</b><br>
             <small><b>Model:</b> {p['Model_type']}</small><br>
