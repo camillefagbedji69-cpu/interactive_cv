@@ -36,7 +36,7 @@ try:
         folium.Marker(
             location=[p['Lat'], p['Long']], 
             popup=folium.Popup(popup_html, max_width=250),
-            icon=folium.Icon(color="blue", icon="info-sign")
+            icon=folium.Icon(color="purple", icon="info-sign")
         ).add_to(cluster)
 
     # Affichage optimisé pour Streamlit
