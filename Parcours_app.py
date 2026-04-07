@@ -18,7 +18,7 @@ try:
     degree_df = load_data("Degree.xlsx")
     
     # Initialisation de la carte sur Parakou
-    m = folium.Map(location=[9.34, 2.62], zoom_start=6, tiles="CartoDB dark_matter")
+    m = folium.Map(location=[9.34, 2.62], zoom_start=8)
     cluster = MarkerCluster().add_to(m)
 
     # Correction de la boucle : iterrows() renvoie (index, row)
@@ -27,7 +27,7 @@ try:
         popup_html = f"""
         <div style="font-family: Arial; width: 200px;">
             <b style="color: #2E86C1;">{p['Degree']} - {p['Duration']}</b><br>
-            <small><b>Model:</b> {p['School']}</small><br>
+            <small><b>School:</b> {p['School']}</small><br>
             <p style="font-size: 12px;">{p['Honors']}</p>
         </div>
         """
