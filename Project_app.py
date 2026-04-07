@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import folium
-from streamlit_folium import st_folium # Plus moderne que components.v1.html
+from streamlit_folium import st_folium
 from folium.plugins import MarkerCluster
 
 st.set_page_config(page_title="Geospatial Portfolio - Boris", layout="wide")
