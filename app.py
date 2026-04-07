@@ -69,7 +69,7 @@ def afficher_experience ():
                 icon=folium.Icon(color="green", icon="info-sign")).add_to(cluster)
             st_folium(m, width=1200, height=500)
     except Exception as e:
-        st.error(f"Erreur de chargement : {e})
+        st.error(f"Loading error : {e}")
 
 ## Menu 
 selected = option_menu(menu_title = None, 
