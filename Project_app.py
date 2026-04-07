@@ -18,7 +18,7 @@ try:
     project_df = load_data("Projects.xlsx")
     
     # Initialisation de la carte sur Parakou
-    m = folium.Map(location=[9.21, 2.37], zoom_start=12)
+    m = folium.Map(location=[9.21, 2.37], zoom_start=6)
     cluster = MarkerCluster().add_to(m)
 
     # Correction de la boucle : iterrows() renvoie (index, row)
