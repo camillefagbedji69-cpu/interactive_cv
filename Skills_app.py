@@ -16,7 +16,9 @@ def load_data(file_path):
 try:
     skills_df = load_data("Skills.xlsx")
 
-    fig = px.bar(skills_df, x = "Skills", y = "Level", color = "Category")
+    fig = px.bar(skills_df, x = "Skills", y = "Level", color = "Category", orientation='h', text='Level')
+    fig.update_traces(texttemplate='%{text}%', textposition='outside')
+    fig.update_layout(showlegend=False, yaxis={'categoryorder':'total ascending'})
     st.plotly_chart(fig, use_container_width = True)
 except : 
     st.error("Check anything are good") 
