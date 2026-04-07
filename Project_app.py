@@ -26,8 +26,8 @@ def afficher_projet():
             </a>
         </div>
         """
-             folium.Marker(location=[p['Lat'], p['Long']], popup=folium.Popup(popup_html, max_width=250), 
-             icon=folium.Icon(color="blue", icon="info-sign")).add_to(cluster)
+              folium.Marker(location=[p['Lat'], p['Long']], popup=folium.Popup(popup_html, max_width=250),
+              icon=folium.Icon(color="blue", icon="info-sign")).add_to(cluster)
         st_folium(m, width=1200, height=500)
     except Exception as e:
            st.error(f"Loading error: {e}")
