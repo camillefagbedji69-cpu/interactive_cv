@@ -20,7 +20,7 @@ def afficher_accueil():
     understand climate–ecosystem interactions in African contexts.""")
     col1, col2 = st.columns(2)
     col1.metric("Experience", "2+ ans")
-    col2.metric("Projets IA", "10+")
+    col2.metric("IA Projects", "20+")
 
 def afficher_projet():
     st.header('🌍 My Projects')
