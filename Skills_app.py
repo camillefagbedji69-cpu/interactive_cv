@@ -3,8 +3,6 @@ import pandas as pd
 import folium
 import plotly.express as px
 
-st.set_page_config(page_title="Geospatial Portfolio - Boris", layout="wide")
-
 def afficher_competences():
     st.header('🌍 My skills')
     @st.cache_data
