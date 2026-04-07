@@ -26,12 +26,12 @@ try:
         # Construction du popup HTML propre
         popup_html = f"""
         <div style="font-family: Arial; width: 200px;">
-            <b style="color: #2E86C1;">{p['Title']} - {p['Location']}</b><br>
+            <b style="color: #2E86C1;">{p['Title']} - p{['Duration']}</b><br>
             <small><b>Institution or Location :</b> {p['Institution']}</small><br>
         </div>
         """
         
-        # ATTENTION : Folium prend [Latitude, Longitude]. Vérifie l'ordre dans ton Excel !
+        # ATTENTION : Folium prend [Latitude, Longitude].
         folium.Marker(
             location=[p['Lat'], p['Long']], 
             popup=folium.Popup(popup_html, max_width=250),
