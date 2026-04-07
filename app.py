@@ -26,18 +26,17 @@ selected = option_menu(menu_title = None,
 if selected == "Home":
   afficher_accueil()
 elif selected == "Education":
-  from Parcours_app import afficher_parcours()
+  from Parcours_app import afficher_parcours
   afficher_parcours()
 elif selected == "Skills":
-  from Skills_app import afficher_competences()
+  from Skills_app import afficher_competences
   afficher_competences()
 elif selected == "Projects":
-  from Project_app import afficher_projet()
+  from Project_app import afficher_projet
   afficher_projet()
 else : 
-  from Experiences_app import afficher_experience()
+  from Experiences_app import afficher_experience
   afficher_experience()
 
-# 5. Footer (optionnel)
 st.sidebar.markdown("---")
-st.caption("Developped by FAGBEDJI G. Camille Boris")
+st.caption("Developped with ❤ by FAGBEDJI G. Camille Boris")
