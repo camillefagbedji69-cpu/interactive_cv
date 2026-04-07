@@ -20,7 +20,7 @@ def afficher_accueil():
 ## Menu 
 selected = option_menu(menu_title = None, 
     options = ["Home", "Education", "Skills", "Projects", "Experience"], 
-                      icon = ["home", "book", "bar-chart", "map", "briefcase"])
+                      icons = ["home", "book", "bar-chart", "map", "briefcase"])
 
 # 4. Logique d'affichage
 if selected == "Home":
