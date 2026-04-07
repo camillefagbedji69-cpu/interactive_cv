@@ -18,6 +18,5 @@ try:
 
     fig = px.bar(skills_df, x = "Skills", y = "Level", color = "Category")
     st.plotly_chart(fig, use_container_width = True)
-
-    
-    
+except : 
+    st.error("Check anything are good") 
