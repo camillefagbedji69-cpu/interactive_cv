@@ -4,8 +4,6 @@ import folium
 from streamlit_folium import st_folium
 from folium.plugins import MarkerCluster
 
-st.set_page_config(page_title="Geospatial Portfolio - Boris", layout="wide")
-
 def afficher_experience ():
     st.header('🌍 My Experiences')
     @st.cache_data
