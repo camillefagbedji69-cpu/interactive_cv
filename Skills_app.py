@@ -16,7 +16,8 @@ def load_data(file_path):
 try:
     skills_df = load_data("Skills.xlsx")
 
-    fig = px.bar(skills_df, x = "Skills", y = "Level", color = "Category", orientation='h', text='Level')
+    fig = px.bar(skills_df, y = "Skills", x = "Level", color = "Category", orientation='h', text='Level')
+    fig.update_traces(texttemplate='%{text}%', textposition='outside')
     st.subheader("Technical Proficiency")
     st.plotly_chart(fig, use_container_width=True)
 except : 
