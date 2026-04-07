@@ -7,12 +7,6 @@ from folium.plugins import MarkerCluster
 st.set_page_config(page_title="Geospatial Portfolio - Boris", layout="wide")
 st.header('🌍 My Geospatial Projects')
 
-# Correction du cache (Streamlit a mis à jour sa syntaxe)
-@st.cache_data
-def load_data(file_path):
-    # Assure-toi que ton fichier s'appelle bien Projects.xlsx
-    return pd.read_excel(file_path)
-
 # Chargement (ajoute un try/except pour éviter les crashs si le fichier manque)
 try:
     project_df = load_data("Projects.xlsx")
