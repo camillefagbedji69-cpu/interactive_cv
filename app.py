@@ -13,7 +13,7 @@ def afficher_accueil():
     I'm particularly motivated by the use of nonlinear systems, probabilistic modeling and machine learning to
     understand climate–ecosystem interactions in African contexts.""")
     st.image("Boris_Fagbedji.jpg")
-    col1, col2, col3 = st.columns(2)
+    col1, col2 = st.columns(2)
     col1.metric("Experience", "2+ ans")
     col2.metric("Projets IA", "10+")
 
