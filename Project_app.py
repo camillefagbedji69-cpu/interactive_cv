@@ -30,7 +30,7 @@ try:
             <small><b>Model:</b> {p['Model_type']}</small><br>
             <p style="font-size: 12px;">{p['Key_results']}</p>
             <p style="font-size: 10px; color: gray;">{p['Tech_stack']}</p>
-            <a href="{p['Github']}" target="_blank" style="color: #E67E22; text-decoration: none; font-weight: bold;">
+            <a href="{p['GitHub']}" target="_blank" style="color: #E67E22; text-decoration: none; font-weight: bold;">
                 See the project 🚀
             </a>
         </div>
