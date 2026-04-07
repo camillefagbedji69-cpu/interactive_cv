@@ -18,6 +18,7 @@ try:
 
     fig = px.bar(skills_df, y = "Skills", x = "Level", color = "Category", orientation='h', text='Level')
     fig.update_traces(texttemplate='%{text}%', textposition='outside')
+    fig.update_layout(showlegend=False, yaxis={'categoryorder':'total ascending'})
     st.subheader("Technical Proficiency")
     st.plotly_chart(fig, use_container_width=True)
 except : 
