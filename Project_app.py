@@ -30,6 +30,5 @@ def afficher_projet():
             icon=folium.Icon(color="blue", icon="info-sign")).add_to(cluster)
             
         st_folium(m, width=1200, height=500)
-        
     except Exception as e:
            st.error(f"Loading error: {e}")
